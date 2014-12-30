@@ -1,3 +1,9 @@
+## 0.1.1
+
+Features:
+
+  - Added CHANGELOG.md generation at the code_generator::cookbook
+
 ## 0.1.0
 
 Features:
