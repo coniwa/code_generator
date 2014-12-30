@@ -31,6 +31,12 @@ cookbook_file "#{cookbook_dir}/Berksfile" do
   action :create_if_missing
 end
 
+# Vagrant
+template "#{cookbook_dir}/Vagrantfile" do
+  helpers(ChefDK::Generator::TemplateHelper)
+  action :create_if_missing
+end
+
 # TK
 template "#{cookbook_dir}/.kitchen.yml" do
   source 'kitchen.yml.erb'
