@@ -3,6 +3,7 @@
 Features:
 
   - Added CHANGELOG.md generation at the code_generator::cookbook
+  - Fixed the supporting platform to `centos-7.0`
 
 ## 0.1.0
 
