@@ -11,6 +11,12 @@ template "#{cookbook_dir}/metadata.rb" do
   action :create_if_missing
 end
 
+# LICENSE
+template "#{cookbook_dir}/LICENSE" do
+  source "LICENSE.#{context.license}.erb"
+  helpers(ChefDK::Generator::TemplateHelper)
+end
+
 # README
 template "#{cookbook_dir}/README.md" do
   helpers(ChefDK::Generator::TemplateHelper)
